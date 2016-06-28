@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<meta http-equiv="refresh" content="900" > 
+<link href='../fullcalendar.css' rel='stylesheet' />
+<link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../lib/moment.min.js'></script>
+<script src='../lib/jquery.min.js'></script>
+<script src='../fullcalendar.min.js'></script>
+<script>
+
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+			defaultDate: '2016-06-28',
+			editable: false,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+					title: 'FF11994, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/6467',
+					backgroundColor: 'blue',
+					start: '2016-07-22'
+				},
+				{
+					title: 'FF11994, Deliver recut media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/6468',
+					backgroundColor: 'blue',
+					start: '2016-07-21'
+				},
+				{
+					title: 'FF11994, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/6469',
+					backgroundColor: 'green',
+					start: '2016-07-20'
+				},
+				{
+					title: 'FF11994, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/6470',
+					backgroundColor: 'green',
+					start: '2016-07-20'
+				},
+				{
+					title: 'FF11994, VOD Art (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/6471',
+					backgroundColor: 'green',
+					start: '2016-07-20'
+				},
+				{
+					title: 'FF11994, Full QC of edited media and upload checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/6472',
+					backgroundColor: 'green',
+					start: '2016-07-11'
+				},
+				{
+					title: 'FF11994, Export adjusted closed captions',
+					url: 'https://participant.shotgunstudio.com/detail/Task/6473',
+					backgroundColor: 'green',
+					start: '2016-07-08'
+				},
+				{
+					title: 'FF11994, Recut Media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/6474',
+					backgroundColor: 'green',
+					start: '2016-07-07'
+				},
+				{
+					title: 'FF12012, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/8604',
+					backgroundColor: 'blue',
+					start: '2016-06-21'
+				},
+				{
+					title: 'FF12024, Mark complete delivery in SIMs',
+					url: 'https://participant.shotgunstudio.com/detail/Task/8637',
+					backgroundColor: 'blue',
+					start: '2016-06-23'
+				},
+				{
+					title: 'FF12024, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/8638',
+					backgroundColor: 'blue',
+					start: '2016-06-23'
+				},
+				{
+					title: 'FF12015, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/8689',
+					backgroundColor: 'blue',
+					start: '2016-06-20'
+				},
+				{
+					title: 'ADP01005, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9053',
+					backgroundColor: 'blue',
+					start: '2016-06-20'
+				},
+				{
+					title: 'ADP01006, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9068',
+					backgroundColor: 'blue',
+					start: '2016-06-27'
+				},
+				{
+					title: 'ADP01007, Technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9077',
+					backgroundColor: 'blue',
+					start: '2016-06-20'
+				},
+				{
+					title: 'ADP01007, Textless, Stems delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9078',
+					backgroundColor: 'blue',
+					start: '2016-06-20'
+				},
+				{
+					title: 'ADP01007, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9083',
+					backgroundColor: 'blue',
+					start: '2016-07-04'
+				},
+				{
+					title: 'ADP01007, Air media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9084',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'ADP01007, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9085',
+					backgroundColor: 'green',
+					start: '2016-06-30'
+				},
+				{
+					title: 'ADP01007, Art, Stills, Documents Delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9087',
+					backgroundColor: 'blue',
+					start: '2016-06-20'
+				},
+				{
+					title: 'ADP01007, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9088',
+					backgroundColor: 'green',
+					start: '2016-06-30'
+				},
+				{
+					title: 'ADP01007, VOD Key Art & screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9089',
+					backgroundColor: 'green',
+					start: '2016-06-30'
+				},
+				{
+					title: 'ADP01007, Send email notification of new media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9091',
+					backgroundColor: 'blue',
+					start: '2016-06-21'
+				},
+				{
+					title: 'ADP01008, Technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9092',
+					backgroundColor: 'blue',
+					start: '2016-06-27'
+				},
+				{
+					title: 'ADP01008, Textless, Stems delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9093',
+					backgroundColor: 'blue',
+					start: '2016-06-27'
+				},
+				{
+					title: 'ADP01008, MXF master delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9094',
+					backgroundColor: 'blue',
+					start: '2016-06-24'
+				},
+				{
+					title: 'ADP01008, Spot QC of recut media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9095',
+					backgroundColor: 'green',
+					start: '2016-07-06'
+				},
+				{
+					title: 'ADP01008, Adjust closed captions and embed into media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9096',
+					backgroundColor: 'green',
+					start: '2016-07-05'
+				},
+				{
+					title: 'ADP01008, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9098',
+					backgroundColor: 'blue',
+					start: '2016-07-11'
+				},
+				{
+					title: 'ADP01008, Air media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9099',
+					backgroundColor: 'blue',
+					start: '2016-07-08'
+				},
+				{
+					title: 'ADP01008, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9100',
+					backgroundColor: 'green',
+					start: '2016-07-07'
+				},
+				{
+					title: 'ADP01008, Full Visual QC of Original File',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9101',
+					backgroundColor: 'green',
+					start: '2016-07-01'
+				},
+				{
+					title: 'ADP01008, Art, Stills, Documents Delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9102',
+					backgroundColor: 'blue',
+					start: '2016-06-27'
+				},
+				{
+					title: 'ADP01008, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9103',
+					backgroundColor: 'green',
+					start: '2016-07-07'
+				},
+				{
+					title: 'ADP01008, VOD Key Art & screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9104',
+					backgroundColor: 'green',
+					start: '2016-07-07'
+				},
+				{
+					title: 'ADP01008, Recut Media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9105',
+					backgroundColor: 'green',
+					start: '2016-07-04'
+				},
+				{
+					title: 'ADP01008, Send email notification of new media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9106',
+					backgroundColor: 'blue',
+					start: '2016-06-28'
+				},
+				{
+					title: 'DJN02006, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9143',
+					backgroundColor: 'blue',
+					start: '2016-06-16'
+				},
+				{
+					title: 'SLA02007, Confirmation of Google Play',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9216',
+					backgroundColor: 'blue',
+					start: '2016-06-16'
+				},
+				{
+					title: 'CTL01001, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9241',
+					backgroundColor: 'blue',
+					start: '2016-06-30'
+				},
+				{
+					title: 'CTL01001, Air media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9242',
+					backgroundColor: 'blue',
+					start: '2016-06-29'
+				},
+				{
+					title: 'CTL01002, Spot QC of recut media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9255',
+					backgroundColor: 'green',
+					start: '2016-06-27'
+				},
+				{
+					title: 'CTL01002, Adjust closed captions and embed into media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9256',
+					backgroundColor: 'green',
+					start: '2016-06-24'
+				},
+				{
+					title: 'CTL01002, Adjust closed captions and embed into media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9256',
+					backgroundColor: 'purple',
+					start: '2016-06-24'
+				},
+				{
+					title: 'CTL01002, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9258',
+					backgroundColor: 'blue',
+					start: '2016-06-30'
+				},
+				{
+					title: 'CTL01002, Air media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9259',
+					backgroundColor: 'blue',
+					start: '2016-06-29'
+				},
+				{
+					title: 'CTL01002, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9260',
+					backgroundColor: 'green',
+					start: '2016-06-28'
+				},
+				{
+					title: 'CTL01002, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9263',
+					backgroundColor: 'green',
+					start: '2016-06-28'
+				},
+				{
+					title: 'CTL01002, VOD Key Art & screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9264',
+					backgroundColor: 'green',
+					start: '2016-06-28'
+				},
+				{
+					title: 'CTL01003, Spot QC of recut media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9270',
+					backgroundColor: 'green',
+					start: '2016-06-28'
+				},
+				{
+					title: 'CTL01003, Adjust closed captions and embed into media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9271',
+					backgroundColor: 'green',
+					start: '2016-06-27'
+				},
+				{
+					title: 'CTL01003, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9273',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'CTL01003, Air media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9274',
+					backgroundColor: 'blue',
+					start: '2016-06-30'
+				},
+				{
+					title: 'CTL01003, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9275',
+					backgroundColor: 'green',
+					start: '2016-06-29'
+				},
+				{
+					title: 'CTL01003, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9278',
+					backgroundColor: 'green',
+					start: '2016-06-29'
+				},
+				{
+					title: 'CTL01003, VOD Key Art & screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9279',
+					backgroundColor: 'green',
+					start: '2016-06-29'
+				},
+				{
+					title: 'CTL01003, Recut Media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9280',
+					backgroundColor: 'green',
+					start: '2016-06-24'
+				},
+				{
+					title: 'CTL01003, Recut Media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9280',
+					backgroundColor: 'purple',
+					start: '2016-06-24'
+				},
+				{
+					title: 'CTL01004, Spot QC of recut media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9285',
+					backgroundColor: 'green',
+					start: '2016-06-29'
+				},
+				{
+					title: 'CTL01004, Adjust closed captions and embed into media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9286',
+					backgroundColor: 'green',
+					start: '2016-06-28'
+				},
+				{
+					title: 'CTL01004, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9288',
+					backgroundColor: 'blue',
+					start: '2016-07-04'
+				},
+				{
+					title: 'CTL01004, Air media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9289',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'CTL01004, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9290',
+					backgroundColor: 'green',
+					start: '2016-06-30'
+				},
+				{
+					title: 'CTL01004, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9293',
+					backgroundColor: 'green',
+					start: '2016-06-30'
+				},
+				{
+					title: 'CTL01004, VOD Key Art & screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9294',
+					backgroundColor: 'green',
+					start: '2016-06-30'
+				},
+				{
+					title: 'CTL01004, Recut Media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9295',
+					backgroundColor: 'green',
+					start: '2016-06-27'
+				},
+				{
+					title: 'CTL01004, Send email notification of new media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9296',
+					backgroundColor: 'blue',
+					start: '2016-06-20'
+				},
+				{
+					title: 'DJN02007, SIMs complete delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9322',
+					backgroundColor: 'blue',
+					start: '2016-06-24'
+				},
+				{
+					title: 'DJN02007, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9323',
+					backgroundColor: 'blue',
+					start: '2016-06-23'
+				},
+				{
+					title: 'SLA02008, Confirmation of Google Play',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9364',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'SLA02008, Confirmation of Amazon',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9367',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'SLA02008, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9368',
+					backgroundColor: 'blue',
+					start: '2016-07-05'
+				},
+				{
+					title: 'SLA02008, Confirmation of iTunes',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9372',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'FF12029, Mark complete delivery in SIMs',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9504',
+					backgroundColor: 'blue',
+					start: '2016-06-29'
+				},
+				{
+					title: 'FF12029, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9505',
+					backgroundColor: 'blue',
+					start: '2016-06-28'
+				},
+				{
+					title: 'SLA02009, SIMs entry (delivery date)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9976',
+					backgroundColor: 'blue',
+					start: '2016-06-27'
+				},
+				{
+					title: 'SLA02009, Validation of EST on platforms',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9977',
+					backgroundColor: 'blue',
+					start: '2016-07-19'
+				},
+				{
+					title: 'SLA02009, Confirmation of EST deliveries',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9978',
+					backgroundColor: 'blue',
+					start: '2016-07-13'
+				},
+				{
+					title: 'SLA02009, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9979',
+					backgroundColor: 'blue',
+					start: '2016-07-06'
+				},
+				{
+					title: 'SLA02009, Send media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9980',
+					backgroundColor: 'blue',
+					start: '2016-07-05'
+				},
+				{
+					title: 'SLA02009, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9981',
+					backgroundColor: 'purple',
+					start: '2016-07-04'
+				},
+				{
+					title: 'SLA02009, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9982',
+					backgroundColor: 'purple',
+					start: '2016-07-04'
+				},
+				{
+					title: 'SLA02009, Upload media checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9983',
+					backgroundColor: 'purple',
+					start: '2016-07-01'
+				},
+				{
+					title: 'SLA02009, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9984',
+					backgroundColor: 'purple',
+					start: '2016-07-01'
+				},
+				{
+					title: 'SLA02009, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9985',
+					backgroundColor: 'purple',
+					start: '2016-07-01'
+				},
+				{
+					title: 'SLA02009, Build project timeline (embed CC)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9986',
+					backgroundColor: 'green',
+					start: '2016-06-30'
+				},
+				{
+					title: 'SLA02009, VOD Art and Screenshots',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9987',
+					backgroundColor: 'green',
+					start: '2016-06-27'
+				},
+				{
+					title: 'SLA02009, Full QC of original media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9988',
+					backgroundColor: 'green',
+					start: '2016-06-24'
+				},
+				{
+					title: 'SLA02009, Closed captioning receipt',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9989',
+					backgroundColor: 'blue',
+					start: '2016-06-29'
+				},
+				{
+					title: 'SLA02009, Prores & script to MVF',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9990',
+					backgroundColor: 'blue',
+					start: '2016-06-24'
+				},
+				{
+					title: 'SLA02009, Creative QC confirmation',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9991',
+					backgroundColor: 'blue',
+					start: '2016-06-23'
+				},
+				{
+					title: 'SLA02009, Link for Programming sign-off',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9992',
+					backgroundColor: 'blue',
+					start: '2016-06-22'
+				},
+				{
+					title: 'SLA02009, Encode to Wiredrive specs and upload',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9993',
+					backgroundColor: 'purple',
+					start: '2016-06-22'
+				},
+				{
+					title: 'SLA02009, Software Technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9994',
+					backgroundColor: 'blue',
+					start: '2016-06-21'
+				},
+				{
+					title: 'SLA02009, Documents delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9995',
+					backgroundColor: 'blue',
+					start: '2016-06-27'
+				},
+				{
+					title: 'SLA02009, MXF, Prores, Textless, Stems delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9996',
+					backgroundColor: 'blue',
+					start: '2016-06-20'
+				},
+				{
+					title: 'SLA02010, Validation of EST on platforms',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9998',
+					backgroundColor: 'blue',
+					start: '2016-07-25'
+				},
+				{
+					title: 'SLA02010, Confirmation of EST deliveries',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9999',
+					backgroundColor: 'blue',
+					start: '2016-07-19'
+				},
+				{
+					title: 'SLA02010, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10000',
+					backgroundColor: 'blue',
+					start: '2016-07-12'
+				},
+				{
+					title: 'SLA02010, Send media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10001',
+					backgroundColor: 'blue',
+					start: '2016-07-11'
+				},
+				{
+					title: 'SLA02010, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10002',
+					backgroundColor: 'purple',
+					start: '2016-07-08'
+				},
+				{
+					title: 'SLA02010, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10003',
+					backgroundColor: 'purple',
+					start: '2016-07-08'
+				},
+				{
+					title: 'SLA02010, Upload media checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10004',
+					backgroundColor: 'purple',
+					start: '2016-07-07'
+				},
+				{
+					title: 'SLA02010, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10005',
+					backgroundColor: 'purple',
+					start: '2016-07-07'
+				},
+				{
+					title: 'SLA02010, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10006',
+					backgroundColor: 'purple',
+					start: '2016-07-07'
+				},
+				{
+					title: 'SLA02010, Build project timeline (embed CC)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10007',
+					backgroundColor: 'green',
+					start: '2016-07-06'
+				},
+				{
+					title: 'SLA02010, VOD Art and Screenshots',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10008',
+					backgroundColor: 'green',
+					start: '2016-07-01'
+				},
+				{
+					title: 'SLA02010, Full QC of original media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10009',
+					backgroundColor: 'green',
+					start: '2016-06-30'
+				},
+				{
+					title: 'SLA02010, Closed captioning receipt',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10010',
+					backgroundColor: 'blue',
+					start: '2016-07-05'
+				},
+				{
+					title: 'HUM03001, SIMs entry (delivery date)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10018',
+					backgroundColor: 'blue',
+					start: '2016-08-05'
+				},
+				{
+					title: 'HUM03001, Validation of EST on platforms',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10019',
+					backgroundColor: 'blue',
+					start: '2016-08-29'
+				},
+				{
+					title: 'HUM03001, Confirmation of EST deliveries',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10020',
+					backgroundColor: 'blue',
+					start: '2016-08-23'
+				},
+				{
+					title: 'HUM03001, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10021',
+					backgroundColor: 'blue',
+					start: '2016-08-16'
+				},
+				{
+					title: 'HUM03001, Send media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10022',
+					backgroundColor: 'blue',
+					start: '2016-08-15'
+				},
+				{
+					title: 'HUM03001, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10023',
+					backgroundColor: 'purple',
+					start: '2016-08-12'
+				},
+				{
+					title: 'HUM03001, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10024',
+					backgroundColor: 'purple',
+					start: '2016-08-12'
+				},
+				{
+					title: 'HUM03001, Upload media checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10025',
+					backgroundColor: 'purple',
+					start: '2016-08-11'
+				},
+				{
+					title: 'HUM03001, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10026',
+					backgroundColor: 'purple',
+					start: '2016-08-11'
+				},
+				{
+					title: 'HUM03001, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10027',
+					backgroundColor: 'purple',
+					start: '2016-08-11'
+				},
+				{
+					title: 'HUM03001, Build project timeline (embed CC)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10028',
+					backgroundColor: 'green',
+					start: '2016-08-10'
+				},
+				{
+					title: 'HUM03001, VOD Art and Screenshots',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10029',
+					backgroundColor: 'green',
+					start: '2016-08-05'
+				},
+				{
+					title: 'HUM03001, Full QC of original media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10030',
+					backgroundColor: 'green',
+					start: '2016-08-04'
+				},
+				{
+					title: 'HUM03001, Closed captioning receipt',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10031',
+					backgroundColor: 'blue',
+					start: '2016-08-09'
+				},
+				{
+					title: 'HUM03001, Prores & script to MVF',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10032',
+					backgroundColor: 'blue',
+					start: '2016-08-04'
+				},
+				{
+					title: 'HUM03001, Creative QC confirmation',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10033',
+					backgroundColor: 'blue',
+					start: '2016-08-03'
+				},
+				{
+					title: 'HUM03001, Link for Programming sign-off',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10034',
+					backgroundColor: 'blue',
+					start: '2016-08-02'
+				},
+				{
+					title: 'HUM03001, Encode to Wiredrive specs and upload',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10035',
+					backgroundColor: 'purple',
+					start: '2016-08-02'
+				},
+				{
+					title: 'HUM03001, Software Technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10036',
+					backgroundColor: 'blue',
+					start: '2016-08-01'
+				},
+				{
+					title: 'HUM03001, Documents delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10037',
+					backgroundColor: 'blue',
+					start: '2016-08-05'
+				},
+				{
+					title: 'HUM03001, MXF, Prores, Textless, Stems delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10038',
+					backgroundColor: 'blue',
+					start: '2016-07-29'
+				},
+				{
+					title: 'SLA02014, SIMs entry (delivery date)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10039',
+					backgroundColor: 'blue',
+					start: '2016-07-08'
+				},
+				{
+					title: 'SLA02014, Validation of EST on platforms',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10040',
+					backgroundColor: 'blue',
+					start: '2016-08-01'
+				},
+				{
+					title: 'SLA02014, Confirmation of EST deliveries',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10041',
+					backgroundColor: 'blue',
+					start: '2016-07-26'
+				},
+				{
+					title: 'SLA02014, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10042',
+					backgroundColor: 'blue',
+					start: '2016-07-19'
+				},
+				{
+					title: 'SLA02014, Send media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10043',
+					backgroundColor: 'blue',
+					start: '2016-07-18'
+				},
+				{
+					title: 'SLA02014, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10044',
+					backgroundColor: 'purple',
+					start: '2016-07-15'
+				},
+				{
+					title: 'SLA02014, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10045',
+					backgroundColor: 'purple',
+					start: '2016-07-15'
+				},
+				{
+					title: 'SLA02014, Upload media checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10046',
+					backgroundColor: 'purple',
+					start: '2016-07-14'
+				},
+				{
+					title: 'SLA02014, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10047',
+					backgroundColor: 'purple',
+					start: '2016-07-14'
+				},
+				{
+					title: 'SLA02014, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10048',
+					backgroundColor: 'purple',
+					start: '2016-07-14'
+				},
+				{
+					title: 'SLA02014, Build project timeline (embed CC)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10049',
+					backgroundColor: 'green',
+					start: '2016-07-13'
+				},
+				{
+					title: 'SLA02014, VOD Art and Screenshots',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10050',
+					backgroundColor: 'green',
+					start: '2016-07-08'
+				},
+				{
+					title: 'SLA02014, Full QC of original media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10051',
+					backgroundColor: 'green',
+					start: '2016-07-07'
+				},
+				{
+					title: 'SLA02014, Closed captioning receipt',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10052',
+					backgroundColor: 'blue',
+					start: '2016-07-12'
+				},
+				{
+					title: 'SLA02014, Prores & script to MVF',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10053',
+					backgroundColor: 'blue',
+					start: '2016-07-07'
+				},
+				{
+					title: 'SLA02014, Creative QC confirmation',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10054',
+					backgroundColor: 'blue',
+					start: '2016-07-06'
+				},
+				{
+					title: 'SLA02014, Link for Programming sign-off',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10055',
+					backgroundColor: 'blue',
+					start: '2016-07-05'
+				},
+				{
+					title: 'SLA02014, Encode to Wiredrive specs and upload',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10056',
+					backgroundColor: 'purple',
+					start: '2016-07-05'
+				},
+				{
+					title: 'SLA02014, Software Technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10057',
+					backgroundColor: 'blue',
+					start: '2016-07-04'
+				},
+				{
+					title: 'SLA02014, Documents delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10058',
+					backgroundColor: 'blue',
+					start: '2016-07-08'
+				},
+				{
+					title: 'SLA02014, MXF, Prores, Textless, Stems delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10059',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'FF11984, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10169',
+					backgroundColor: 'blue',
+					start: '2016-08-19'
+				},
+				{
+					title: 'FF11984, Deliver recut media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10170',
+					backgroundColor: 'blue',
+					start: '2016-08-18'
+				},
+				{
+					title: 'FF11984, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10171',
+					backgroundColor: 'green',
+					start: '2016-08-17'
+				},
+				{
+					title: 'FF11984, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10172',
+					backgroundColor: 'green',
+					start: '2016-08-17'
+				},
+				{
+					title: 'FF11984, Upload checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10173',
+					backgroundColor: 'green',
+					start: '2016-08-16'
+				},
+				{
+					title: 'FF11984, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10174',
+					backgroundColor: 'green',
+					start: '2016-08-16'
+				},
+				{
+					title: 'FF11984, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10175',
+					backgroundColor: 'green',
+					start: '2016-08-16'
+				},
+				{
+					title: 'FF11984, Build project timeline and save',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10176',
+					backgroundColor: 'purple',
+					start: '2016-08-15'
+				},
+				{
+					title: 'FF11984, VOD art and screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10178',
+					backgroundColor: 'purple',
+					start: '2016-08-12'
+				},
+				{
+					title: 'FF11984, Full QC of Original File',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10179',
+					backgroundColor: 'purple',
+					start: '2016-08-12'
+				},
+				{
+					title: 'FF12001, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10187',
+					backgroundColor: 'blue',
+					start: '2016-07-27'
+				},
+				{
+					title: 'FF12001, Deliver recut media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10188',
+					backgroundColor: 'blue',
+					start: '2016-07-26'
+				},
+				{
+					title: 'FF12001, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10189',
+					backgroundColor: 'green',
+					start: '2016-07-25'
+				},
+				{
+					title: 'FF12001, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10190',
+					backgroundColor: 'green',
+					start: '2016-07-25'
+				},
+				{
+					title: 'FF12001, Upload checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10191',
+					backgroundColor: 'green',
+					start: '2016-07-22'
+				},
+				{
+					title: 'FF12001, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10192',
+					backgroundColor: 'green',
+					start: '2016-07-22'
+				},
+				{
+					title: 'FF12001, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10193',
+					backgroundColor: 'green',
+					start: '2016-07-22'
+				},
+				{
+					title: 'FF12001, Build project timeline and save',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10194',
+					backgroundColor: 'purple',
+					start: '2016-07-21'
+				},
+				{
+					title: 'FF12001, Send email notification of new media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10195',
+					backgroundColor: 'blue',
+					start: '2016-07-21'
+				},
+				{
+					title: 'FF12001, VOD art and screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10196',
+					backgroundColor: 'purple',
+					start: '2016-07-20'
+				},
+				{
+					title: 'FF12001, Full QC of Original File',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10197',
+					backgroundColor: 'purple',
+					start: '2016-07-20'
+				},
+				{
+					title: 'FF12001, Software technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10198',
+					backgroundColor: 'blue',
+					start: '2016-07-19'
+				},
+				{
+					title: 'FF12001, Art, Stills, Documents Delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10199',
+					backgroundColor: 'blue',
+					start: '2016-07-15'
+				},
+				{
+					title: 'FF12002, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10205',
+					backgroundColor: 'blue',
+					start: '2016-08-02'
+				},
+				{
+					title: 'FF12002, Deliver recut media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10206',
+					backgroundColor: 'blue',
+					start: '2016-08-01'
+				},
+				{
+					title: 'FF12002, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10207',
+					backgroundColor: 'green',
+					start: '2016-07-29'
+				},
+				{
+					title: 'FF12002, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10208',
+					backgroundColor: 'green',
+					start: '2016-07-29'
+				},
+				{
+					title: 'FF12002, Upload checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10209',
+					backgroundColor: 'green',
+					start: '2016-07-28'
+				},
+				{
+					title: 'FF12002, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10210',
+					backgroundColor: 'green',
+					start: '2016-07-28'
+				},
+				{
+					title: 'FF12002, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10211',
+					backgroundColor: 'green',
+					start: '2016-07-28'
+				},
+				{
+					title: 'FF12002, Build project timeline and save',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10212',
+					backgroundColor: 'purple',
+					start: '2016-07-27'
+				},
+				{
+					title: 'FF12002, Send email notification of new media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10213',
+					backgroundColor: 'blue',
+					start: '2016-07-27'
+				},
+				{
+					title: 'FF12002, VOD art and screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10214',
+					backgroundColor: 'purple',
+					start: '2016-07-26'
+				},
+				{
+					title: 'FF12002, Full QC of Original File',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10215',
+					backgroundColor: 'purple',
+					start: '2016-07-26'
+				},
+				{
+					title: 'FF12002, Software technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10216',
+					backgroundColor: 'blue',
+					start: '2016-07-25'
+				},
+				{
+					title: 'FF12002, Art, Stills, Documents Delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10217',
+					backgroundColor: 'blue',
+					start: '2016-07-21'
+				},
+				{
+					title: 'DJN02008, Mark complete delivery in SIMs',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10342',
+					backgroundColor: 'blue',
+					start: '2016-06-24'
+				},
+				{
+					title: 'DJN02008, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10343',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'DJN02008, Deliver recut media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10344',
+					backgroundColor: 'blue',
+					start: '2016-06-30'
+				},
+				{
+					title: 'DJN02008, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10345',
+					backgroundColor: 'purple',
+					start: '2016-06-29'
+				},
+				{
+					title: 'DJN02008, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10346',
+					backgroundColor: 'purple',
+					start: '2016-06-29'
+				},
+				{
+					title: 'DJN02008, Upload checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10347',
+					backgroundColor: 'purple',
+					start: '2016-06-28'
+				},
+				{
+					title: 'DJN02008, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10348',
+					backgroundColor: 'purple',
+					start: '2016-06-28'
+				},
+				{
+					title: 'DJN02008, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10349',
+					backgroundColor: 'purple',
+					start: '2016-06-28'
+				},
+				{
+					title: 'DJN02008, Build project timeline and save',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10350',
+					backgroundColor: 'green',
+					start: '2016-06-27'
+				},
+				{
+					title: 'DJN02008, Send email notification of new media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10351',
+					backgroundColor: 'blue',
+					start: '2016-06-27'
+				},
+				{
+					title: 'DJN02008, VOD art and screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10352',
+					backgroundColor: 'green',
+					start: '2016-06-21'
+				},
+				{
+					title: 'DJN02008, VOD art and screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10352',
+					backgroundColor: 'purple',
+					start: '2016-06-21'
+				},
+				{
+					title: 'DJN02008, Full QC of Original File',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10353',
+					backgroundColor: 'green',
+					start: '2016-06-24'
+				},
+				{
+					title: 'DJN02008, Full QC of Original File',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10353',
+					backgroundColor: 'purple',
+					start: '2016-06-24'
+				},
+				{
+					title: 'DJN02009, Mark complete delivery in SIMs',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10357',
+					backgroundColor: 'blue',
+					start: '2016-06-30'
+				},
+				{
+					title: 'DJN02009, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10358',
+					backgroundColor: 'blue',
+					start: '2016-07-07'
+				},
+				{
+					title: 'DJN02009, Deliver recut media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10359',
+					backgroundColor: 'blue',
+					start: '2016-07-06'
+				},
+				{
+					title: 'DJN02009, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10360',
+					backgroundColor: 'purple',
+					start: '2016-07-05'
+				},
+				{
+					title: 'DJN02009, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10361',
+					backgroundColor: 'purple',
+					start: '2016-07-05'
+				},
+				{
+					title: 'DJN02009, Upload checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10362',
+					backgroundColor: 'purple',
+					start: '2016-07-04'
+				},
+				{
+					title: 'DJN02009, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10363',
+					backgroundColor: 'purple',
+					start: '2016-07-04'
+				},
+				{
+					title: 'DJN02009, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10364',
+					backgroundColor: 'purple',
+					start: '2016-07-04'
+				},
+				{
+					title: 'DJN02009, Build project timeline and save',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10365',
+					backgroundColor: 'green',
+					start: '2016-07-01'
+				},
+				{
+					title: 'DJN02009, Send email notification of new media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10366',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'DJN02009, VOD art and screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10367',
+					backgroundColor: 'green',
+					start: '2016-06-27'
+				},
+				{
+					title: 'DJN02009, Full QC of Original File',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10368',
+					backgroundColor: 'green',
+					start: '2016-06-30'
+				},
+				{
+					title: 'DJN02009, Software technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10369',
+					backgroundColor: 'blue',
+					start: '2016-06-24'
+				},
+				{
+					title: 'DJN02009, Art, Stills, Documents Delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10370',
+					backgroundColor: 'blue',
+					start: '2016-06-30'
+				},
+				{
+					title: 'DJN02009, File Delivery (MXF, Textless, Stems)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10371',
+					backgroundColor: 'blue',
+					start: '2016-06-23'
+				},
+				{
+					title: 'DJN02010, Mark complete delivery in SIMs',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10372',
+					backgroundColor: 'blue',
+					start: '2016-07-07'
+				},
+				{
+					title: 'DJN02010, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10373',
+					backgroundColor: 'blue',
+					start: '2016-07-14'
+				},
+				{
+					title: 'DJN02010, Deliver recut media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10374',
+					backgroundColor: 'blue',
+					start: '2016-07-13'
+				},
+				{
+					title: 'DJN02010, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10375',
+					backgroundColor: 'purple',
+					start: '2016-07-12'
+				},
+				{
+					title: 'DJN02010, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10376',
+					backgroundColor: 'purple',
+					start: '2016-07-12'
+				},
+				{
+					title: 'DJN02010, Upload checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10377',
+					backgroundColor: 'purple',
+					start: '2016-07-11'
+				},
+				{
+					title: 'DJN02010, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10378',
+					backgroundColor: 'purple',
+					start: '2016-07-11'
+				},
+				{
+					title: 'DJN02010, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10379',
+					backgroundColor: 'purple',
+					start: '2016-07-11'
+				},
+				{
+					title: 'DJN02010, Build project timeline and save',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10380',
+					backgroundColor: 'green',
+					start: '2016-07-08'
+				},
+				{
+					title: 'DJN02010, Send email notification of new media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10381',
+					backgroundColor: 'blue',
+					start: '2016-07-08'
+				},
+				{
+					title: 'DJN02010, VOD art and screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10382',
+					backgroundColor: 'green',
+					start: '2016-07-04'
+				},
+				{
+					title: 'DJN02010, Full QC of Original File',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10383',
+					backgroundColor: 'green',
+					start: '2016-07-07'
+				},
+				{
+					title: 'DJN02010, Software technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10384',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'DJN02010, Art, Stills, Documents Delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10385',
+					backgroundColor: 'blue',
+					start: '2016-07-07'
+				},
+				{
+					title: 'DJN02010, File Delivery (MXF, Textless, Stems)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10386',
+					backgroundColor: 'blue',
+					start: '2016-06-30'
+				},
+				{
+					title: 'DJN02011, Mark complete delivery in SIMs',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10387',
+					backgroundColor: 'blue',
+					start: '2016-07-14'
+				},
+				{
+					title: 'DJN02011, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10388',
+					backgroundColor: 'blue',
+					start: '2016-07-21'
+				},
+				{
+					title: 'DJN02011, Deliver recut media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10389',
+					backgroundColor: 'blue',
+					start: '2016-07-20'
+				},
+				{
+					title: 'DJN02011, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10390',
+					backgroundColor: 'purple',
+					start: '2016-07-19'
+				},
+				{
+					title: 'DJN02011, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10391',
+					backgroundColor: 'purple',
+					start: '2016-07-19'
+				},
+				{
+					title: 'DJN02011, Upload checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10392',
+					backgroundColor: 'purple',
+					start: '2016-07-18'
+				},
+				{
+					title: 'DJN02011, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10393',
+					backgroundColor: 'purple',
+					start: '2016-07-18'
+				},
+				{
+					title: 'DJN02011, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10394',
+					backgroundColor: 'purple',
+					start: '2016-07-18'
+				},
+				{
+					title: 'DJN02011, Build project timeline and save',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10395',
+					backgroundColor: 'green',
+					start: '2016-07-15'
+				},
+				{
+					title: 'DJN02011, Send email notification of new media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10396',
+					backgroundColor: 'blue',
+					start: '2016-07-15'
+				},
+				{
+					title: 'DJN02011, VOD art and screenshots (if necessary)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10397',
+					backgroundColor: 'green',
+					start: '2016-07-11'
+				},
+				{
+					title: 'DJN02011, Full QC of Original File',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10398',
+					backgroundColor: 'green',
+					start: '2016-07-14'
+				},
+				{
+					title: 'DJN02011, Software technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10399',
+					backgroundColor: 'blue',
+					start: '2016-07-08'
+				},
+				{
+					title: 'DJN02011, Art, Stills, Documents Delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10400',
+					backgroundColor: 'blue',
+					start: '2016-07-14'
+				},
+				{
+					title: 'DJN02011, File Delivery (MXF, Textless, Stems)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10401',
+					backgroundColor: 'blue',
+					start: '2016-07-07'
+				},
+				{
+					title: 'SLA02011, SIMs entry (delivery date)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10413',
+					backgroundColor: 'blue',
+					start: '2016-07-22'
+				},
+				{
+					title: 'SLA02011, Validation of EST on platforms',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10414',
+					backgroundColor: 'blue',
+					start: '2016-08-15'
+				},
+				{
+					title: 'SLA02011, Confirmation of EST deliveries',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10415',
+					backgroundColor: 'blue',
+					start: '2016-08-09'
+				},
+				{
+					title: 'SLA02011, Confirmation of air ready media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10416',
+					backgroundColor: 'blue',
+					start: '2016-08-02'
+				},
+				{
+					title: 'SLA02011, Send media to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10417',
+					backgroundColor: 'blue',
+					start: '2016-08-01'
+				},
+				{
+					title: 'SLA02011, TCS Exported to Encompass',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10418',
+					backgroundColor: 'purple',
+					start: '2016-07-29'
+				},
+				{
+					title: 'SLA02011, TCS Published',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10419',
+					backgroundColor: 'purple',
+					start: '2016-07-29'
+				},
+				{
+					title: 'SLA02011, Upload media checklist',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10420',
+					backgroundColor: 'purple',
+					start: '2016-07-28'
+				},
+				{
+					title: 'SLA02011, Full QC of exported media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10421',
+					backgroundColor: 'purple',
+					start: '2016-07-28'
+				},
+				{
+					title: 'SLA02011, Verify project timeline and export',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10422',
+					backgroundColor: 'purple',
+					start: '2016-07-28'
+				},
+				{
+					title: 'SLA02011, Build project timeline (embed CC)',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10423',
+					backgroundColor: 'green',
+					start: '2016-07-27'
+				},
+				{
+					title: 'SLA02011, VOD Art and Screenshots',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10424',
+					backgroundColor: 'green',
+					start: '2016-07-22'
+				},
+				{
+					title: 'SLA02011, Full QC of original media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10425',
+					backgroundColor: 'green',
+					start: '2016-07-21'
+				},
+				{
+					title: 'SLA02011, Closed captioning receipt',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10426',
+					backgroundColor: 'blue',
+					start: '2016-07-26'
+				},
+				{
+					title: 'SLA02011, Prores & script to MVF',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10427',
+					backgroundColor: 'blue',
+					start: '2016-07-21'
+				},
+				{
+					title: 'SLA02011, Creative QC confirmation',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10428',
+					backgroundColor: 'blue',
+					start: '2016-07-20'
+				},
+				{
+					title: 'SLA02011, Link for Programming sign-off',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10429',
+					backgroundColor: 'blue',
+					start: '2016-07-19'
+				},
+				{
+					title: 'SLA02011, Encode to Wiredrive specs and upload',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10430',
+					backgroundColor: 'purple',
+					start: '2016-07-19'
+				},
+				{
+					title: 'SLA02011, Software Technical QC',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10431',
+					backgroundColor: 'blue',
+					start: '2016-07-18'
+				},
+				{
+					title: 'SLA02011, Documents delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10432',
+					backgroundColor: 'blue',
+					start: '2016-07-22'
+				},
+				{
+					title: 'SLA02011, MXF, Prores, Textless, Stems delivery',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10433',
+					backgroundColor: 'blue',
+					start: '2016-07-15'
+				},
+				{
+					title: 'Plastic Paradise - Remove Black',
+					url: 'https://participant.shotgunstudio.com/detail/Task/5457',
+					backgroundColor: 'green',
+					start: '2016-06-27'
+				},
+				{
+					title: 'SLA S2 - Delivery to Cineflix',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9300',
+					backgroundColor: 'green',
+					start: '2016-10-31'
+				},
+				{
+					title: 'SLA S2 - Delivery to Cineflix',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9300',
+					backgroundColor: 'purple',
+					start: '2016-10-31'
+				},
+				{
+					title: 'SLA S2 - Delivery to Cineflix',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9300',
+					backgroundColor: 'blue',
+					start: '2016-10-31'
+				},
+				{
+					title: 'OCC S1 - Deliver to EST',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9447',
+					backgroundColor: 'red',
+					start: '2016-07-01'
+				},
+				{
+					title: 'OCC S1 - Deliver to EST',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9447',
+					backgroundColor: 'blue',
+					start: '2016-07-01'
+				},
+				{
+					title: 'ANG 10x old episodes - Embed new CC into media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10403',
+					backgroundColor: 'green',
+					start: '2016-07-29'
+				},
+				{
+					title: 'ANG 10x old episodes - Embed new CC into media',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10403',
+					backgroundColor: 'purple',
+					start: '2016-07-29'
+				},
+				{
+					title: ''The Music of Strangers' Clips',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10447',
+					backgroundColor: 'purple',
+					start: '2016-06-30'
+				},
+				{
+					title: 'USAN Spots for Traffic',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10451',
+					backgroundColor: 'purple',
+					start: '2016-06-28'
+				},
+				{
+					title: 'July 2016 Monthly, Email Jon to check assets newly live',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9654',
+					backgroundColor: 'red',
+					start: '2016-07-01'
+				},
+				{
+					title: 'July 2016 Monthly, Upload assets to Neulion',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9657',
+					backgroundColor: 'green',
+					start: '2016-06-27'
+				},
+				{
+					title: 'July 2016 Monthly, Check Pivot app against WO',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9658',
+					backgroundColor: 'cyan',
+					start: '2016-07-01'
+				},
+				{
+					title: 'July 2016 Monthly, Check affiliate portals',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9659',
+					backgroundColor: 'red',
+					start: '2016-06-28'
+				},
+				{
+					title: 'July 2016 Monthly, Encompass sends run times',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9660',
+					backgroundColor: 'red',
+					start: '2016-06-24'
+				},
+				{
+					title: 'July 2016 Monthly, Encompass confirms completed WO',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9661',
+					backgroundColor: 'red',
+					start: '2016-06-24'
+				},
+				{
+					title: 'June 2016 Week 4, Check affiliate portals',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9665',
+					backgroundColor: 'red',
+					start: '2016-06-14'
+				},
+				{
+					title: 'July 2016 Homescreen, Email Jon for validation',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9692',
+					backgroundColor: 'red',
+					start: '2016-07-01'
+				},
+				{
+					title: 'June 2016 Week 5, Check affiliate portals',
+					url: 'https://participant.shotgunstudio.com/detail/Task/9730',
+					backgroundColor: 'red',
+					start: '2016-06-21'
+				},
+				{
+					title: 'July 2016 Week 1, Check affiliate portals',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10434',
+					backgroundColor: 'red',
+					start: '2016-07-05'
+				},
+				{
+					title: 'July 2016 Week 1, Upload assets to Neulion',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10435',
+					backgroundColor: 'purple',
+					start: '2016-07-04'
+				},
+				{
+					title: 'July 2016 Week 1, Encompass sends run times',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10436',
+					backgroundColor: 'red',
+					start: '2016-07-01'
+				},
+				{
+					title: 'July 2016 Week 1, Encompass confirms completed WO',
+					url: 'https://participant.shotgunstudio.com/detail/Task/10437',
+					backgroundColor: 'red',
+					start: '2016-07-01'
+				}
+
+			]
+		});
+	});
+
+</script>
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+        
+	}
+
+	#calendar {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+    .my-legend {
+	    max-width: 1200px;
+	    margin: 0 auto;
+    }
+	.my-legend .legend-title {
+	    text-align: left;
+	    margin-bottom: 8px;
+	    font-weight: bold;
+	    font-size: 90%;
+        max-width: 1200px;
+	    }
+	  .my-legend .legend-scale ul {
+	    margin: 0;
+	    padding: 0;
+	    float: left;
+	    list-style: none;
+	    }
+	  .my-legend .legend-scale ul li {
+	    display: block;
+	    float: left;
+	    width: 50px;
+	    margin-bottom: 6px;
+	    text-align: center;
+	    font-size: 80%;
+	    list-style: none;
+	    }
+	  .my-legend ul.legend-labels li span {
+	    display: block;
+	    float: left;
+	    height: 15px;
+	    width: 50px;
+	    }
+	  .my-legend .legend-source {
+	    font-size: 70%;
+	    color: #999;
+	    clear: both;
+	    }
+	  .my-legend a {
+	    color: #777;
+	    }
+    
+</style>
+</head>
+<body>
+	<div id='calendar'></div>
+	<div class='my-legend'>
+	<div class='legend-title'>Color Mapping:</div>
+	<div class='legend-scale'>
+	  <ul class='legend-labels'>
+	    <li><span style='background:red;'></span>Helen</li>
+	    <li><span style='background:blue;'></span>Rafiah</li>
+	    <li><span style='background:green;'></span>Nathaniel</li>
+	    <li><span style='background:purple;'></span>Nick</li>
+	    <li><span style='background:cyan;'></span>Marian</li>
+	  </ul>
+	</div>
+	</div>
+</body>
+</html>
